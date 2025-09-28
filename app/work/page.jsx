@@ -36,6 +36,43 @@ const projects = [
   {
     num: "۰۱",
     category: "فول‌استک",
+    title: "قفسه",
+    description:
+      "کتاب‌هاتو اضافه کن، وضعیت خوندنت رو مشخص کن و یادداشت‌ها و هایلایت‌هات رو همیشه کنار خودت داشته باش.",
+    stack: [
+      { icon: <SiNextdotjs style={{ color: "#000" }} />, name: "نکست‌جی‌اس" },
+      { icon: <SiTailwindcss style={{ color: "#38BDF8" }} />, name: "تیلویند" },
+      { icon: <FaJs style={{ color: "#F7DF1E" }} />, name: "تایپ‌اسکریپت" },
+      {
+        icon: <BiLogoPostgresql style={{ color: "#0064a5" }} />,
+        name: "پستگرس‌کیوال",
+      },
+    ],
+    image: "/assets/work/ghafase.jpeg",
+    live: "https://book.varmanli.ir",
+    github: "https://github.com/Varmanli/book-libray",
+  },
+  {
+    num: "۰۲",
+    category: "فول‌استک",
+    title: "NexPad",
+    description: "مقاله‌های جالب و آموزشی برنامه‌نویسی",
+    stack: [
+      { icon: <SiNextdotjs style={{ color: "#000" }} />, name: "نکست‌جی‌اس" },
+      { icon: <SiTailwindcss style={{ color: "#38BDF8" }} />, name: "تیلویند" },
+      { icon: <FaJs style={{ color: "#F7DF1E" }} />, name: "تایپ‌اسکریپت" },
+      {
+        icon: <BiLogoPostgresql style={{ color: "#0064a5" }} />,
+        name: "پستگرس‌کیوال",
+      },
+    ],
+    image: "/assets/work/nexpad.jpeg",
+    live: "https://nexpad.ir",
+    github: "https://github.com/Varmanli/nexpad",
+  },
+  {
+    num: "۰۳",
+    category: "فول‌استک",
     title: "موزیک پیچ",
     description:
       "سایت استریم و پخش آنلاین موسیقی با قابلیت مدیریت بک‌اند و دیتابیس",
@@ -54,7 +91,7 @@ const projects = [
   {
     num: "۰۲",
     category: "فول‌استک",
-    title: "وب‌سایت شخصی",
+    title: "وب‌سایت ملیکا شمیرانی",
     description:
       "در این پروژه مسئولیت کامل فرانت‌اند و بک‌اند را بر عهده داشتم. طراحی رابط کاربری مدرن همراه با یک داشبورد مدیریتی قدرتمند، امکان مدیریت آسان بخش‌های مختلف سایت و تجربه کاربری روان را فراهم می‌کند.",
     stack: [
@@ -279,12 +316,13 @@ function Work() {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ duration: 0.5 }}
+                      loop
                       className="h-[320px] relative flex justify-center items-center bg-gray-800/20 rounded-xl shadow-lg hover:shadow-xl transition-all"
                     >
                       <Image
                         src={project.image}
                         fill
-                        className="object-cover rounded-xl"
+                        className="object-cover rounded-xl border border-white/10"
                         alt={project.title}
                       />
                     </motion.div>
