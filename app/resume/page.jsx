@@ -47,7 +47,7 @@ const about = {
     },
     {
       field: "سن",
-      fieldValue: "۲۲",
+      fieldValue: "27",
     },
     {
       field: "شماره تماس",
